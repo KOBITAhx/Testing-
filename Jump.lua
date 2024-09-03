@@ -4,7 +4,8 @@ local function conectarAlServidorConMenorEstadistica()
   local servidorMasBajo = nil 
   
      for _, servidor in pairs(servidores) do
-        local estadisticaServidor = servidor:GetCustomProperty("Estadistica") -- Obtén la estadística del servidor
+        local estadisticaServidor = servidor:GetCustomProperty("Estadistica") 
+
         
         if estadisticaServidor and estadisticaServidor < estadisticaMasBaja then
             estadisticaMasBaja = estadisticaServidor
